@@ -5,6 +5,7 @@ function createLogo(oddNumber) {
     let halfLine = ((oddNumber + 1) / 2) - 1;
     
     if (oddNumber % 2 == 0) return;
+    if (oddNumber < 2 || oddNumber > 10000) return;
     
     for (let col = 0; col <= oddNumber; col++) {
 
