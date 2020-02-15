@@ -3,7 +3,9 @@ function createLogo(oddNumber) {
     let dash = '-';
     let str = "";
     let halfLine = ((oddNumber + 1) / 2) - 1;
-
+    
+    if (oddNumber % 2 == 0) return;
+    
     for (let col = 0; col <= oddNumber; col++) {
 
         if (col <= halfLine) {
